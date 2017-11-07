@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="230.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="temp" layoutX="58.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" wrappingWidth="43.13671875" />
+      <Text layoutX="102.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="℃">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="ciśn" layoutX="58.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Text layoutX="102.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hPa">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="wilgotność" layoutX="288.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Text layoutX="332.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="zachm" layoutX="58.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Text layoutX="102.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="siłaWiatru" layoutX="58.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Text layoutX="102.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="m/s">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="PM10" layoutX="288.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Text fx:id="PM25" layoutX="288.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Text layoutX="82.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last update:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="czas" layoutX="152.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+      <Button fx:id="button1" layoutX="159.0" layoutY="110.0" mnemonicParsing="false" text="Refresh" />
+      <Text layoutX="241.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PM 10">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="241.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PM 2.5">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="meteo" layoutX="266.0" layoutY="160.0" mnemonicParsing="false" selected="true" text="Meteo" />
+      <RadioButton fx:id="openWeather" layoutX="266.0" layoutY="191.0" mnemonicParsing="false" text="OpenWeather" />
+      <Text layoutX="15.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="temp:" />
+      <Text layoutX="15.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="press:" />
+      <Text layoutX="15.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="speed:" />
+      <Text layoutX="241.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="humid:" />
+      <Text layoutX="15.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="clouds:" />
+      <Text layoutX="15.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="direction:" />
+      <Text fx:id="kierWiatru" layoutX="72.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" />
+   </children>
+</AnchorPane>
