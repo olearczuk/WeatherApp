@@ -27,16 +27,16 @@ public class Controller {
 
     public void odświeżDane(){
         w = new WarunkiPogodowe();
-        Task<Void> task = new Task1(zmienialny, w, false);
+        Task<Void> task = new Task1(zmienialny, w, true);
         Thread thread = new Thread(task);
         thread.setDaemon(true);
 
-        Task<Void> task1 = new Task1(stały, w, true);
-        Thread thread1 = new Thread(task1);
-        thread1.setDaemon(true);
+//        Task<Void> task1 = new Task1(stały, w, false);
+//        Thread thread1 = new Thread(task1);
+//        thread1.setDaemon(true);
 
         thread.start();
-        thread1.start();
+//        thread1.start();
     }
     @FXML
     public void initialize(){
