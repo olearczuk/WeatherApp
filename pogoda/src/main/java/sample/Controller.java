@@ -31,7 +31,7 @@ public class Controller {
         Thread thread = new Thread(task);
         thread.setDaemon(true);
 
-//        Task<Void> task1 = new Task1(stały, w, false);
+//        Task<Void> task1 = new Task1(stały, w, true);
 //        Thread thread1 = new Thread(task1);
 //        thread1.setDaemon(true);
 
